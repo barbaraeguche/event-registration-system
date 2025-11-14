@@ -39,16 +39,12 @@ cd event-registration-system
 ```
 
 #### 3. configure your ide (intellij idea example)
-**a. open the project:**
-- open intellij idea
-- select **file → open** and choose the project directory
-
-**b. set up tomcat:**
+**a. set up tomcat:**
 - download and install [apache tomcat 10.x](https://tomcat.apache.org/download-10.cgi)
 - go to **intellij idea → settings → build, execution, deployment → application servers** (on mac)
 - click **+** and add your tomcat installation directory
 
-**c. build the project with maven:**
+**b. build the project with maven:**
 - open the terminal in intellij (or use your system terminal)
 - run the following command to clean and build the project:
 ```bash
@@ -56,7 +52,7 @@ mvn clean package
 ```
 - this will create the `target` directory with the war file needed for deployment
 
-**d. configure the run configuration:**
+**c. configure the run configuration:**
 - click **run → edit configurations**
 - click **+** and select **tomcat server → local**
 - name it (e.g., "event-registration-system")
